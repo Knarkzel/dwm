@@ -5,8 +5,8 @@ static const unsigned int borderpx  = 4;        /* border pixel of windows */
 static const unsigned int snap      = 1;        /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=16" };
-static const char dmenufont[]       = "monospace:size=16";
+static const char *fonts[]          = { "monospace:size=18" };
+static const char dmenufont[]       = "monospace:size=18";
 
 /* colors, used for dmenu */ 
 static const char col_gray1[]       = "#10141e";
@@ -82,8 +82,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_space,  setlayout,      {0} },
 	//{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	//{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	//{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	//{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	//{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	//{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	TAGKEYS(                        XK_1,                      0)
