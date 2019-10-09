@@ -6,17 +6,17 @@ static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=20" };
 static const char dmenufont[]       = "monospace:size=20";
 
-/* colors, used for dmenu */ 
-static const char col_gray1[]       = "#10141e";
-static const char col_gray2[]       = "#384963";
-static const char col_gray3[]       = "#4D4456";
-static const char col_gray4[]       = "#ffffff";
-static const char col_cyan[]        = "#534961";
+/* colors, used for dmenu and dwm*/ 
+static const char col_gray1[]       = "#282828";
+static const char col_gray2[]       = "#ffffff";
+static const char col_gray3[]       = "#ebdbb2";
+static const char col_gray4[]       = "#282828";
+static const char col_cyan[]        = "#458588";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  "#ffffff"  },
+	[SchemeNorm] = { col_gray3, col_gray1, col_cyan  },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_gray2 },
 };
 
 /* tagging */
